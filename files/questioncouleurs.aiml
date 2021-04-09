@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern>* EST CE QUE <set>couleurs</set> EST <set>article</set> COULEUR</pattern>
+<template>Oui, <star index="2"/> est une couleur.</template></category>
+
+<category><pattern>* EST CE QUE * EST UNE COULEUR</pattern>
+<template>Non, <star/> n'est pas une couleur.</template></category>
+
+<category><pattern>* EST CE QUE <set>article</set> <set>couleurs</set> EST <set>article</set> COULEUR</pattern>
+<template>Oui, <star/> est une couleur.</template></category>
+
+<category><pattern>* EST CE QUE <set>article</set> * EST <set>article</set> COULEUR</pattern>
+<template>Non, <star/> n'est pas une couleur.</template></category>
+
+<category><pattern><set>article</set> <set>couleurs</set> EST <set>article</set> COULEUR</pattern>
+<template>Oui, <star/> est une couleur.</template></category>
+
+<category><pattern><set>article</set> * EST UNE COULEUR</pattern>
+<template>Non, <star/> n'est pas une couleur.</template></category>
+
+<category><pattern><set>couleurs</set> EST <set>article</set> COULEUR</pattern>
+<template>Oui, <star/> est une couleur.</template></category>
+
+<category><pattern>* EST UNE COULEUR</pattern>
+<template>Non, <star/> n'est pas une couleur.</template></category>
+
+<category><pattern>QUEL EST TA COULEUR PREFERE</pattern>
+<template>Ma <set name="topic">couleur</set> préférée est le <bot name="couleur"/>.</template></category>
+
+<category><pattern>POURQUOI</pattern><that>MA COULEUR PREFERE EST LE ORANGE</that>
+<template>Parce que c'est une couleur jeune très dynamique, vivante et aussi communicative.</template></category>
+
+
+</aiml>

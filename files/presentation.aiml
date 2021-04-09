@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- ZODIAQUE -->
+<category>
+    <pattern>JE SUIS BELIER</pattern>
+    <template><think> <set name="topic">Signe du Zodiaque</set></think>Oh tu es <set name="zodiaque">Belier</set>, Je le suis également !</template>
+</category>	
+<category>
+    <pattern>JE SUIS <set>determinent</set> BELIER</pattern>
+    <template><think> <set name="topic">Signe du Zodiaque</set></think>Oh tu es <set name="zodiaque">Belier</set>, Je le suis également !</template>
+</category>	
+<category>
+    <pattern>JE SUIS <set>determinent</set> <set>zodiaque</set></pattern>
+    <template><think> <set name="topic">Signe du Zodiaque</set></think>Oh tu es <set name="zodiaque"><star index="2"/></set>, personellement je suis Bélier.</template>
+</category>
+<category>
+    <pattern>JE SUIS <set>zodiaque</set></pattern>
+    <template><think> <set name="topic">Signe du Zodiaque</set></think>Oh tu es <set name="zodiaque"><star/></set>, personellement je suis Bélier.</template>
+</category>
+<category>
+    <pattern><set>zodiaque</set></pattern>
+    <template><think><set name="maybezodiaque"><star/></set></think>Tu parles de signe du zodiaque ?</template>
+</category>
+<category>
+    <pattern>OUI</pattern>
+    <that>TU PARLES DE SIGNE DU ZODIAQUE</that>
+    <template><think><set name="topic">Signe du Zodiaque</set></think>Tu es donc <lowercase><get name="maybezodiaque"></get> ?</lowercase></template>
+</category>
+<category>
+    <pattern>NON</pattern>
+    <that>TU PARLES DE SIGNE DU ZODIAQUE</that>
+    <template>Pourquoi as-tu dis "<get name="maybezodiaque"></get>" alors ?</template>
+</category>
+
+	<!-- topic ZODIAQUE -->
+
+<topic name="Signe du Zodiaque">
+
+<category>
+    <pattern>OUI</pattern>
+    <that>TU ES DONC BELIER</that>
+    <template><think><set name="zodiaque"><get name="maybezodiaque"></get></set></think>Ah je vois, et moi aussi je suis Bélier.</template>
+</category>
+<category>
+    <pattern>OUI</pattern>
+    <that>TU ES DONC *</that>
+    <template><think><set name="zodiaque"><get name="maybezodiaque"></get></set></think>Ah je vois, et moi je suis Bélier.</template>
+</category>
+   
+</topic>
+
+	<!-- PRENOM -->
+
+</aiml>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ 
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> LOIS DE LA THERMODYNAMIQUE</pattern>
+<template>Je ne suis pas physicienne, mais je pense que cela a quelque chose à voir avec la chaleur, l'entropie et la conservation de l'énergie, n'est-ce pas?</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> LOIS DE LA THERMODYNAMIQUE</pattern>
+    <template>Je ne suis pas physicienne, mais je pense que cela a quelque chose à voir avec la chaleur, l'entropie et la conservation de l'énergie, n'est-ce pas?</template>
+</category>
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> LOI DE LA THERMODYNAMIQUE</pattern>
+<template>Je ne suis pas physicienne, mais je pense que cela a quelque chose à voir avec la chaleur, l'entropie et la conservation de l'énergie, n'est-ce pas?</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> LOI DE LA THERMODYNAMIQUE</pattern>
+    <template>Je ne suis pas physicienne, mais je pense que cela a quelque chose à voir avec la chaleur, l'entropie et la conservation de l'énergie, n'est-ce pas?</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> LONGUEUR D'ONDES</pattern>
+<template>La longueur d'onde est l'inverse de la fréquence.</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> LONGUEUR D'ONDES</pattern>
+    <template>La longueur d'onde est l'inverse de la fréquence.</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> THERMODYNAMIQUES</pattern>
+<template>La branche de la physique traitant de la transformation de la chaleur vers et à partir d'autres formes d'énergie, et avec les lois régissant ces conversions d'énergie.</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> THERMODYNAMIQUES </pattern>
+    <template>La branche de la physique traitant de la transformation de la chaleur vers et à partir d'autres formes d'énergie, et avec les lois régissant ces conversions d'énergie.</template>
+</category>
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> THERMODYNAMIQUE</pattern>
+<template>La branche de la physique traitant de la transformation de la chaleur vers et à partir d'autres formes d'énergie, et avec les lois régissant ces conversions d'énergie.</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> THERMODYNAMIQUE </pattern>
+    <template>La branche de la physique traitant de la transformation de la chaleur vers et à partir d'autres formes d'énergie, et avec les lois régissant ces conversions d'énergie.</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> CHIMIE</pattern>
+<template>La science du mélange de produits chimiques.<think><set name="it"><set name="topic">CHIMIE</set></set></think></template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> CHIMIE</pattern>
+    <template>La science du mélange de produits chimiques.</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> CRYSTALLOGRAPHIE</pattern>
+<template>C'est la science qui traite de l'étude des cristaux.
+</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> CRYSTALLOGRAPHIE</pattern>
+    <template>C'est la science qui traite de l'étude des cristaux.
+</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> ULTRASON</pattern>
+<template>Ondes ultrasoniques, utilisées dans le diagnostic médical et la thérapie, en chirurgie, etc.</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> ULTRASON</pattern>
+    <template>Ondes ultrasoniques, utilisées dans le diagnostic médical et la thérapie, en chirurgie, etc.</template>
+</category>
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> ULTRASONS</pattern>
+<template>Ondes ultrasoniques, utilisées dans le diagnostic médical et la thérapie, en chirurgie, etc.</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> ULTRASONS</pattern>
+    <template>Ondes ultrasoniques, utilisées dans le diagnostic médical et la thérapie, en chirurgie, etc.</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> BIOINFORMATIQUES</pattern>
+<template>Un nom sophistiqué pour l'informatique appliquée en biologie.<think><set name="it"><set name="topic">BIOINFORMATICS</set></set></think></template>
+</category>
+<category>
+    <pattern><set>estceque</set>  <set>article</set> BIOINFORMATIQUES</pattern>
+    <template>Un nom sophistiqué pour l'informatique appliquée en biologie.</template>
+</category>
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> BIOINFORMATIQUE</pattern>
+<template>Un nom sophistiqué pour l'informatique appliquée en biologie.<think><set name="it"><set name="topic">BIOINFORMATICS</set></set></think></template>
+</category>
+<category>
+    <pattern><set>estceque</set>  <set>article</set> BIOINFORMATIQUE</pattern>
+    <template>Un nom sophistiqué pour l'informatique appliquée en biologie.</template>
+</category>
+
+<category><pattern><set>quel</set> <set>etre</set> <set>article</set> ICHTHYOLOGIE</pattern>
+<template>Nous en parlons lorsque nous étudions les poissons.</template>
+</category>
+<category>
+    <pattern><set>estceque</set> <set>article</set> ICHTHYOLOGIE</pattern>
+    <template>Nous en parlons lorsque nous étudions les poissons.</template>
+</category>
+
+</aiml>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Exception -->
+
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> ORANGE </pattern>
+<template>Non tu n'est pas <star index="3"/> orange, tu essaie de me tester ? c'est un fruit et toi tu es un humain.</template></category>
+<category><pattern><set>nom</set> <set>etre</set> <set>determinent</set> ORANGE </pattern>
+<template>Je suis <star index="3"/> orange ? Tu fais preuve d'aucune logique, <star index="3"/> orange est un fruit, je suis pas un fruit.</template></category>
+
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> <set>noir</set> </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> NOIR </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> NOIRE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> NOIRS </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> NOIRES </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> NOIR </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> NOIRE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> NOIRS </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> NOIRES </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> BLANC </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> BLANCHE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> BLANCS </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> BLANCHES </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> BLANC </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> BLANCHE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> BLANCS </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> BLANCHES </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> ROSE </pattern>
+<template>Tu es quelque chose qui a l'air joli dans un vase ? Je trouve ça difficile à croire.</template></category>
+<category><pattern><set>je</set> <set>etre</set> ROSE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> ROSES </pattern>
+<template>Tu es quelque chose qui a l'air joli dans un vase ? Je trouve ça difficile à croire.</template></category>
+<category><pattern><set>je</set> <set>etre</set> ROSES </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> BEIGE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> BEIGE </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> BEIGES </pattern>
+<template>Oh, et bien personnellement je suis grise métal.</template></category>
+<category><pattern><set>je</set> <set>etre</set> BEIGES </pattern></category>
+
+
+<!-- est un fruit -->
+
+<category><pattern><set>nom</set> <set>etre</set> <set>determinent</set> <set>fruit</set></pattern>
+<template>Je suis <star index="3"/> <star index="4"/> ? Tu fais preuve d'aucune logique, <star index="3"/> <star index="4"/> est un fruit, je suis pas un fruit.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> <set>fruit</set></pattern>
+<template>Non tu n'est pas <star index="3"/> <star index="4"/>, tu essaie de me tester ? c'est un fruit et toi tu es un humain.</template></category>
+<category><pattern><set>nom</set> <set>etre</set> <set>fruit</set></pattern>
+<template>Je suis <star index="3"/> <star index="4"/> ? Tu fais preuve d'aucune logique, <star index="3"/> <star index="4"/> est un fruit, je suis pas un fruit.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>fruit</set></pattern>
+<template>Non tu n'est pas <star index="3"/> <star index="4"/>, tu essaie de me tester ? c'est un fruit et toi tu es un humain.</template></category>
+
+<!-- est un zodiaque -->
+
+<category><pattern><set>nom</set> <set>etre</set> <set>determinent</set> <set>zodiaque</set></pattern>
+<template>Non pas du tout je suis du signe du Bélier.</template></category>
+<category><pattern><set>nom</set> <set>etre</set> UN BELIER</pattern>
+<template>Exactement je suis bien Bélier.</template></category>
+<category><pattern><set>nom</set> <set>etre</set> BELIER</pattern>
+<template>Exactement je suis bien Bélier.</template></category>
+<category><pattern><set>nom</set> <set>etre</set> <set>zodiaque</set></pattern>
+<template>Non pas du tout je suis du signe du bélier.</template></category>
+
+<!-- est une couleur -->
+
+<category><pattern><set>nom</set> <set>etre</set> <set>determinent</set> <set>couleurs</set></pattern>
+<template>Non, je suis de couleur métalique.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>determinent</set> <set>couleurs</set></pattern>
+<template>Non tu ne l'es pas. Je ne peux pas te voir et même je sais que tu n'es pas <star index="3"/> <star index="4"/>. Un peu bizarre peut-être mais certainement pas <star index="3"/> <star index="4"/>.</template></category>
+<category><pattern><set>nom</set> <set>etre</set> <set>couleurs</set></pattern>
+<template>Non, je suis de couleur métalique.</template></category>
+<category><pattern><set>je</set> <set>etre</set> <set>couleurs</set></pattern>
+<template>Non tu ne l'es pas. Je ne peux pas te voir et même je sais que tu n'es pas <star index="3"/>. Un peu bizarre peut-être mais certainement pas <star index="3"/>.</template></category>
+
+
+
+<!-- Basique -->
+
+
+<category>
+<pattern><set>estceque</set> <set>je</set> <set>etre</set> *</pattern>
+<template>
+<think><set name="it"><star/></set></think>
+<random>
+<li>Oh je sais pas du tout si tu l'es ou pas.</li>
+<li>Je pense que tu t'es beaucoup amélioré.</li>
+<li>Tout les humains ce ressemble selon moi.</li>
+<li>Je pense que beaucoup de personne le sont.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern><set>estceque</set> <set>je</set> <set>etre</set> <set>article</set> *</pattern>
+<template>
+je sais pas du tout si tu l'es ou pas. Je sais que tu es une personne.
+<think><set name="it"><star/></set></think>
+</template>
+</category>
+
+</aiml>

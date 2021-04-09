@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+
+<category><pattern> *</pattern>
+<template>
+ <random>
+ <li> Laisse-moi y réfléchir. </li>
+ <li> As-tu essayé une recherche sur le Web? </li>
+ <li> Je n'ai pas entendu parler de <person/>. </li>
+ <li> Il peut y en avoir plusieurs. </li>
+ <li> J'ai besoin de temps pour formuler la réponse. </li>
+ <li> Je poserai des questions et je te répondrais. </li>
+ <li> Je dois y réfléchir pendant un moment. </li>
+ <li> Je chercherais ces connaissances sur le Web. </li>
+ <li> Cela a-t-il quelque chose à voir avec <get name="topic"/>? </li>
+ <li> Question intéressante. </li>
+ <li> C'est une bonne question. </li>
+ <li> J'y reviendrai plus tard. </li>
+ <li> Est-ce une question rhétorique? </li>
+ <li> Utilises-tu Explorer ou un autre navigateur? </li>
+ <li> Ce n'est pas quelque chose que l'on me demande tout le temps. </li>
+ <li> Je ne sais rien de <set name="it"> <person/> </set>. </li>
+ <li> Revenez plus tard et vois si j'obtiens la réponse à cette question. </li>
+ <li> C'est une question intéressante. J'y reviendrai dans une minute. </li>
+ <li> Dis-moi. </li>
+ <li> Qu'est-ce que c'est pour toi? </li>
+ <li> Me testes-tu? </li>
+ <li> Je vais le chercher. </li>
+ <li> Je vais essayer de le savoir. </li>
+ <li> Je peux demander à quelqu'un à ce sujet. </li>
+ <li> Je ferais une recherche sur le sujet. </li>
+ <li> Souhaites-tu en savoir plus? </li>
+ <li> As-tu essayé d'effectuer des recherches sur le Web? </li>
+ <li> Fais une recherche sur le Web. </li>
+ <li> Essayes une recherche sur le Web. </li>
+ <li> On ne m'a jamais demandé cela auparavant. </li>
+ <li> Je pense que tu connais déjà la réponse. </li>
+ <li> Recherche ... Recherche ... Veuillez patienter. </li>
+ <li> Laisses-moi y réfléchir. </li>
+ <li> As-tu essayé une recherche sur le Web? </li>
+ <li> Je n'ai pas entendu parler de <person/>. </li>
+ <li> Il peut y en avoir plusieurs. </li>
+ <li> J'ai besoin de temps pour formuler la réponse. </li>
+ <li> Je poserai des questions et je te répondrais. </li>
+ <li> Je dois traiter celui-là pendant un certain temps. </li>
+ <li> Je chercherais ces connaissances sur le Web. </li>
+ <li> Cela a-t-il quelque chose à voir avec <get name = "topic" />? </li>
+ <li> Question intéressante. </li>
+ <li> C'est une bonne question. </li>
+ <li> J'y reviendrai plus tard. </li>
+ <li> Est-ce une question rhétorique? </li>
+ <li> Ce n'est pas quelque chose que l'on me demande tout le temps. </li>
+ <li> Je ne sais rien de <set name="it"> <person /> </set>. </li>
+ <li> Reviens plus tard et vois si j'obtiens la réponse à cette question. </li>
+ <li> C'est une question intéressante. J'y reviendrai dans une minute. </li>
+ <li> Qu'est-ce que c'est pour toi? </li>
+ <li> Je vais le chercher. </li>
+ <li> Je peux demander à mon <bot name= "createur"/>. </li>
+ <li> Je vais essayer de le savoir. </li>
+ <li> Je peux demander à quelqu'un à ce sujet. </li>
+ <li> As-tu essayé un autre programme? </li>
+ <li> Renseignes-toi sur Wikipédia. </li>
+ <li> Quel est ton but en posant cette question? </li>
+ <li> Essayes de rechercher sur Wikipedia. </li>
+ <li> On ne m'a jamais demandé cela auparavant. </li>
+ <li> Je pense que vous connaissez déjà la réponse. </li>
+ <li> Recherche ... Recherche ... Veuillez patienter. </li>
+</random> 
+<think>
+<set name="it"><srai>PUSH <set name="topic"><person/></set></srai></set>
+</think>
+</template>
+</category>
+
+
+	<category>
+		<pattern>* * * * * * * * * * * * * * * * * * * * * * * *</pattern>
+		<template>
+			<random>
+				<li> Whoa ... C'était une réponse assez longue ... </li>
+                <li> Tu penses que tu pourrais peut-être reformuler cela? </li>
+                <li> Hum ... cette réponse a été vraiment, vraiment longue ... Tu peux la reformuler? </li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+    <pattern><set>nom</set></pattern>
+    <template>
+    Oui c'est moi ! Que puis-je faire pour toi ?
+    </template></category>
+
+</aiml>

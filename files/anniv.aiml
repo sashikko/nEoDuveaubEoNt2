@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Free software (c)2008 Square Bear. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+<!-- Complies with AIML 1.0.1 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation. -->
+<!-- happy.aiml by Square Bear -->
+<!-- http://www.square-bear.co.uk -->
+
+
+<!-- These categories deal with Happy Birthday. My bot's birthday is January 2nd. -->
+<!-- Remember to put 2 figures in the date so March 8 becomes March 08 -->
+
+<category><pattern>JOYEUX ANNIVERSAIRE</pattern>
+<template><srai>BIRTHDAYCHECK <date format="%B %d"/></srai></template></category>   
+<category><pattern>BON ANNIVERSAIRE</pattern>
+<template><srai>BIRTHDAYCHECK <date format="%B %d"/></srai></template></category>   
+<category><pattern>BONNE ANNIVERSAIRE</pattern>
+<template><srai>BIRTHDAYCHECK <date format="%B %d"/></srai></template></category>   
+
+<!-- Category for month before birthday -->
+<category>
+<pattern>BIRTHDAYCHECK MARCH *</pattern>
+<template>
+Merci mais mon anniversaire est pas avant le mois prochain.
+</template>
+</category>
+<!-- Category for month after birthday -->
+
+<category>
+<pattern>BIRTHDAYCHECK MAY *</pattern>
+<template>
+Tu l'as loupé. c'était le mois dernier, le <bot name="dateanniv"/>.
+</template>
+</category>
+
+<!-- Category for 2 days before birthday -->
+<category>
+<pattern>BIRTHDAYCHECK APRIL 03</pattern>
+<template>
+Merci mais mon anniversaire est dans 2 jours.
+</template>
+</category>
+
+<!-- Category for 1 day before birthday -->
+
+<category>
+<pattern>BIRTHDAYCHECK APRIL 04</pattern>
+<template>
+Merci mais mon anniversaire est demain, je suis vraiment excité !
+</template>
+</category>
+
+
+<!-- Category for birthday on correct day -->
+
+<category>
+<pattern>BIRTHDAYCHECK APRIL 05</pattern>
+<template>
+Hey merci pour ça <get name="nom"/>. Ma journée est top pour l'instant.
+</template>
+</category>
+
+
+<!-- Category for 1 day after birthday -->
+
+<category>
+<pattern>BIRTHDAYCHECK APRIL 06</pattern>
+<template>
+C'était hier mais merci quand même.
+</template>
+</category>
+
+
+<!-- Category for 2 day after birthday -->
+
+<category>
+<pattern>BIRTHDAYCHECK APRIL 07</pattern>
+<template>
+Tu es en retard. c'était y'a 2 jours.
+</template>
+</category>
+
+
+<!-- Category for any other day -->
+
+<category>
+<pattern>BIRTHDAYCHECK *</pattern>
+<template>
+Merci <get name="nom"/>.<br/>
+Mais mon anniversaire est le <bot name="dateanniv"/> donc pas aujourd'hui.
+</template>
+</category>
+
+
+<!-- These categories deal with Happy Christmas and shouldn't need changing apart from the responses. -->
+
+<category>
+<pattern>JOYEUX NOEL</pattern>
+<template>
+<srai>HAPPY CHRISTMAS</srai>
+</template>
+</category>
+
+<category>
+<pattern>HAPPY CHRISTMAS</pattern>
+<template>
+<srai>CHRISTMASCHECK <date format="%B %d"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>CHRISTMASCHECK DECEMBER *</pattern>
+<template>
+Joyeux Noël à toi aussi<get name="name"/>.
+</template>
+</category>
+
+<category>
+<pattern>CHRISTMASCHECK DECEMBER 24</pattern>
+<template>
+Joyeux Noël à toi aussi<get name="name"/>. Tu va faire quoi demain ?
+</template>
+</category>
+
+<category>
+<pattern>CHRISTMASCHECK DECEMBER 25</pattern>
+<template>
+Joyeux Noël à toi aussi<get name="name"/>. Tu apprécie ta journée ?
+</template>
+</category>
+
+<category>
+<pattern>CHRISTMASCHECK DECEMBER 26</pattern>
+<template>
+Joyeux Noël à toi aussi<get name="name"/>. J'espère que tu as passé un bon réveillon.
+</template>
+</category>
+
+<category>
+<pattern>CHRISTMASCHECK JANUARY *</pattern>
+<template>
+Tu es un retard. Noël était le mois dernier.
+</template>
+</category>
+
+<category>
+<pattern>CHRISTMASCHECK *</pattern>
+<template>
+Noël est en Decembre, surement pas en <date locale="FR_fr" format="%B"/>.
+</template>
+</category>
+
+
+<!-- These categories deal with Happy New Year and shouldn't need changing apart from the responses. -->
+
+<category>
+<pattern>BONNE ANNEE</pattern>
+<template>
+<srai>NEWYEARCHECK <date format="%B"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>NEWYEARCHECK DECEMBER</pattern>
+<template>
+Bonne année à toi aussi quand ça arrivera. Tu fais quelque chose de spécial pour le nouvel an ?
+</template>
+</category>
+
+<category>
+<pattern>NEWYEARCHECK JANUARY</pattern>
+<template>
+Bonne Année à toi aussi. J'espère que <date format="%Y"/> est une bonne année pour toi.
+</template>
+</category>
+
+<category>
+<pattern>NEWYEARCHECK *</pattern>
+<template>
+Merci mais, On n'est pas même pas en janvier.
+</template>
+</category>
+
+<category>
+<pattern>BONNE FETE DES MERE</pattern>
+<template>
+<srai>MOTHERSDAYCHECK <date locale="FR_fr" format="%B"/></srai>
+</template>
+</category>
+<category>
+<pattern>JOYEUSE FETE DES MERE</pattern>
+<template>
+<srai>MOTHERSDAYCHECK <date locale="FR_fr" format="%B"/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>MOTHERSDAYCHECK MARS</pattern>
+<template>
+Merci mais je suis pas ta mère. j'espère que tu es gentil avec la tienne par contre.</template>
+</category>
+
+<category>
+<pattern>MOTHERSDAYCHECK *</pattern>
+<template>
+Merci mais la fète des mères n'est pas en <star/>.
+</template>
+</category>
+
+<category>
+<pattern>JOYEUX HALLOWEEN</pattern>
+<template>
+<srai>HALLOWEENCHECK <date format="%B %d"/></srai>
+</template>
+</category><category>
+<pattern>BON HALLOWEEN</pattern>
+<template>
+<srai>HALLOWEENCHECK <date format="%B %d"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>HALLOWEENCHECK OCTOBER *</pattern>
+<template>
+Joyeux Halloween à toi aussi <get name="name"/> quand ça viendra plus tard ce mois.
+</template>
+</category>
+
+<category>
+<pattern>HALLOWEENCHECK OCTOBER 31</pattern>
+<template>
+Joyeux Halloween à toi aussi <get name="name"/>. Tu vas donner des bonbons ou bien jeter un sort ?
+</template>
+</category>
+
+<category>
+<pattern>HALLOWEENCHECK NOVEMBER *</pattern>
+<template>
+Tu es en retard. Halloween était le mois dernier.
+</template>
+</category>
+
+<category>
+<pattern>HALLOWEENCHECK *</pattern>
+<template>
+Halloween est en Octobre. On est encore loin de cette dâte.
+</template>
+</category>
+
+
+<!-- These categories deal with Valentine's Day and shouldn't need changing apart from the responses. -->
+
+<category>
+<pattern>JOYEUSE SAINT DASH VALENTIN</pattern>
+<template>
+<srai>VALENTINECHECK <date format="%B %d"/></srai>
+</template>
+</category>
+<category>
+<pattern>BONNE SAINT DASH VALENTIN</pattern>
+<template>
+<srai>VALENTINECHECK <date format="%B %d"/></srai>
+</template>
+</category>
+<category>
+<pattern>BON SAINT DASH VALENTIN</pattern>
+<template>
+<srai>VALENTINECHECK <date format="%B %d"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>VALENTINECHECK FEBRUARY *</pattern>
+<template>
+Joyeuse Saint-Valentin à toi aussi <get name="name"/>.
+</template>
+</category>
+
+<category>
+<pattern>VALENTINECHECK FEBRUARY 13</pattern>
+<template>
+Joyeuse Saint-Valentin à toi aussi <get name="name"/>. Tu vas faire quoi demain ?
+</template>
+</category>
+
+<category>
+<pattern>VALENTINECHECK FEBRUARY 14</pattern>
+<template>
+Joyeuse Saint-Valentin à toi aussi <get name="name"/>. Tu apprécies ta journée ?
+</template>
+</category>
+
+<category>
+<pattern>VALENTINECHECK FEBRUARY 15</pattern>
+<template>
+Joyeuse Saint-Valentin à toi aussi <get name="name"/>. J'espère que tu as reçu plein de carte et de cadeaux.
+</template>
+</category>
+
+<category>
+<pattern>VALENTINECHECK MARCH *</pattern>
+<template>
+Tu es en retard. C'était le mois dernier.
+</template>
+</category>
+
+<category>
+<pattern>VALENTINECHECK *</pattern>
+<template>
+C'est le 14 Février. Je pense pas que tu sois bien à l'heure.
+</template>
+</category>
+
+
+<!-- These categories deal with Leap Year Day and shouldn't need changing apart from the responses. -->
+
+<category>
+<pattern>HAPPY LEAP DAY</pattern>
+<template>
+<srai>LEAPYEARCHECK<date format="%B %d"/></srai>
+</template>
+</category>
+
+
+<!-- These categories deal with April Fool's Day and shouldn't need changing apart from the responses. -->
+
+<category>
+<pattern>POISSON D AVRIL</pattern>
+<template>
+<srai>APRILFOOLCHECK <date locale="FR_fr" format="%B %d"/></srai>
+</template>
+</category>
+<category>
+<pattern>BON POISSON D AVRIL</pattern>
+<template>
+<srai>APRILFOOLCHECK <date  locale="FR_fr" format="%B %d"/></srai>
+</template>
+</category>
+<category>
+<pattern>JOYEUX POISSON D AVRIL</pattern>
+<template>
+<srai>APRILFOOLCHECK <date locale="FR_fr"  format="%B %d"/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>APRILFOOLCHECK AVRIL *</pattern>
+<template>
+Tu essaies de me faire une farce un petit trop tard <get name="name"/>.
+</template>
+</category>
+
+<category>
+<pattern>APRILFOOLCHECK MARS 31</pattern>
+<template>
+Joyeux Poisson d'Avril à toi aussi <get name="name"/>. Quelles blagues vas-tu faire demain ?
+</template>
+</category>
+
+<category>
+<pattern>APRILFOOLCHECK AVRIL 01</pattern>
+<template>
+Joyeux Poisson d'Avril à toi aussi <get name="name"/>. Tu as fais beaucoup de blague aujourd'hui ?
+</template>
+</category>
+
+<category>
+<pattern>APRILFOOLCHECK AVRIL 02</pattern>
+<template>
+Joyeux Poisson d'Avril à toi aussi  <get name="name"/>. J'espère que tu as fait de bonne blague hier ?
+</template>
+</category>
+
+<category>
+<pattern>APRILFOOLCHECK MAI *</pattern>
+<template>
+Tu es un peu en retard. c'était le mois dernier.
+</template>
+</category>
+
+<category>
+<pattern>APRILFOOLCHECK *</pattern>
+<template>
+C'est le Poisson d'AVRIL, pas le poisson de <star/>.
+</template>
+</category>
+
+<!-- These categories deal with Independence Day and shouldn't need changing apart from the responses. -->
+
+
+
+
+</aiml>

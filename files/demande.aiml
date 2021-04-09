@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category><pattern>C EST QUOI APRES *</pattern>
+    <template><map name="next"><star/></map></template>
+</category>
+</aiml>

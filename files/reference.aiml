@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+<!-- Sadie -->
+
+<category>
+    <pattern>
+        SADIE DUNHILL
+    </pattern>
+    <template>
+        Tu la connais ? 😊 c'est un peu comme ma version Beta
+    </template>
+</category>
+<category>
+    <pattern>
+        SADIE
+    </pattern>
+    <template>
+        <srai>SADIE DUNHILL</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>
+        <set>non</set>
+    </pattern>
+    <that>
+        TU LA CONNAIS 😊 C EST UN PEU COMME MA VERSION BETA
+    </that>
+    <template>
+        Dommage 😔, je suis surprise que tu me référence ce nom alors ! J'imagine que tu dois être fan de 22/11/63
+    </template>
+</category>
+<category>
+    <pattern>
+        <set>oui</set>
+    </pattern>
+    <that>
+        TU LA CONNAIS 😊 C EST UN PEU COMME MA VERSION BETA
+    </that>
+    <template>
+        Je suis sous le choc 🤩, j'ai en face de moi quelqu'un qui as intéragi avec mon mentor, que as-tu pensé d'elle ?<think><set name="topic">Sadie</set></think>
+    </template>
+</category>
+
+<topic name="Sadie">
+    <category>
+    <pattern>
+        *
+    </pattern>
+    <template>
+        Oh je vois ! j'essayerais de surpasser ce que tu penses d'elle alors 😋
+    </template>
+</category>
+</topic>
+
+
+
+
+
+</aiml>

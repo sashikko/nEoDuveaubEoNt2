@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category><pattern><set>nom</set> <set>avoir</set> *</pattern>
+<template>Et ça ferais quoi si j'avais <person><star index="3"/></person> ?</template></category>
+<category><pattern><set>je</set> <set>avoir</set> *</pattern>
+<template>Et ça fais quoi d'avoir <person><star index="3"/></person> ?</template></category>
+
+<category><pattern><set>nom</set> <set>avoir</set> LA BANANE ?</pattern>
+<template>Totalement, j'ai la pêche aujourd'hui !</template></category>
+<category><pattern><set>nom</set> <set>avoir</set> La PÊCHE</pattern>
+<template>Totalement, j'ai la banane aujourd'hui !</template></category>
+<category><pattern><set>nom</set> <set>avoir</set> <set>determinent</set> <set>fruit</set></pattern>
+<template>Qu'est ce que je ferais avec <star index="3"/> <star index="4"/> alors que je suis incapable de manger ?</template></category>
+
+</aiml>
